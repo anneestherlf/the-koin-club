@@ -1,0 +1,298 @@
+body {
+    background: #09090B;
+}
+
+* {
+    font-family: Numans;
+}
+
+/* remove barra de rolagem  */
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* main - card the koin winter program  */
+
+.card-tkwp {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 1rem;
+    padding: .02rem;
+    background: #1E0B43;
+    border-radius: 26px;
+
+    h1 {
+        color: white;
+        text-align: center;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+    p {
+        color: white;
+        margin-bottom: 5rem;
+        font-size: 23px;
+        padding: 1rem;
+
+        b {
+            color: #8C52FF;
+        }
+    }
+}
+
+/* navbar */
+
+#button-nav {
+    transition: .2s;
+     padding: .5rem;
+     border-width: .1;
+     border-color: #8C52FF;
+     border-radius: 50px;
+     background-color: #8C52FF;
+     height: fit-content;
+
+
+a {
+    color: #09090B;
+    text-decoration: none;
+    font-size: 15px;
+}
+}
+
+#button-nav:hover{
+    transition: .2s;
+    background-color:#09090B;
+
+    a{
+        color: #ffffff;
+    }
+}
+
+.nav-bar {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.253);
+
+    img {
+        width: 11rem;
+        cursor: pointer;
+    }
+}
+
+button {
+    padding: 1rem;
+     border-width: .1;
+     border-color: #8C52FF;
+     border-radius: 50px;
+     background-color: #8C52FF;
+     height: fit-content;
+    a {
+        text-decoration: none;
+        color: rgb(10, 10, 10);
+        font-size: 26px;
+    }
+}
+
+button:hover{
+    transition: .2s;
+    background-color:#9f71fc00;
+
+    a{
+        color: #ffffff;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* main 2 - nosso objetivo  */
+
+.main2 {
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+    gap: 1rem;
+
+.main2-text {
+    background-color: #8C52FF;
+    padding: 3rem;
+    border-radius: 28px;
+    height: 421px;
+    margin-left: 3rem;
+}
+
+img {
+    margin-right: 3rem;
+}
+
+}
+
+@keyframes CSSscrollReveal {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* main 3 - o programa  */
+
+.main3{
+    color: white;
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10rem;
+    margin: 3rem;
+    gap: 1rem;
+
+    .main3-texto-lado1 {
+        background-color: #8C52FF;
+        padding: 4rem;
+        border-radius: 29px;
+        margin-top: .5rem;
+    }
+
+    .lado2 {
+        h1 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        p {
+            font-size: 20px;
+        }
+        padding: 3rem;
+        background-color: #1E0B43;
+        border-radius: 29px;
+        height: 860px;
+    }
+}
+
+.button-3 {
+    margin-top: 5rem;
+    display: flex;
+    justify-self: center;
+    margin-left: 18rem;
+    padding: 1rem;
+     border-width: .1;
+     border-color: #8C52FF;
+     border-radius: 50px;
+     background-color: #8C52FF;
+     height: fit-content;
+    a {
+        text-decoration: none;
+        color: rgb(10, 10, 10);
+        font-size: 26px;
+    }
+}
+
+.main4 {
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    color: white;
+    margin: .5rem;
+    padding: 5rem;
+
+    p {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+}
+
+/* footer  */
+
+.footer {
+    padding: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    border-top-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.253);
+
+    .logologo {
+        width: 11rem;
+        cursor: pointer;
+    }
+
+    .media-link {
+        width: 34px;
+    }
+
+    .media-link-yt {
+        width: 45px;
+    }
+
+    .media-link-email {
+        width: 45px;
+    }
+
+    .line {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    a {
+        color: white;
+    }
+
+}
+
+.mark {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8rem;
+}

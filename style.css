@@ -1,0 +1,260 @@
+body {
+    background: #09090B;
+}
+
+* {
+    font-family: Numans;
+}
+
+/* remove barra de rolagem  */
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* navbar */
+
+#button-nav {
+    transition: .2s;
+     padding: .5rem;
+     border-width: .1;
+     border-color: #8C52FF;
+     border-radius: 50px;
+     background-color: #8C52FF;
+     height: fit-content;
+
+
+a {
+    color: #09090B;
+    text-decoration: none;
+    font-size: 15px;
+}
+}
+
+#button-nav:hover{
+    transition: .2s;
+    background-color:#09090B;
+
+    a{
+        color: #ffffff;
+    }
+}
+
+.nav-bar {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.253);
+
+    img {
+        width: 11rem;
+        cursor: pointer;
+    }
+}
+
+/* main 1 - inicial */
+
+
+/* texto animado do main 1 - inicial  */
+
+.logo-and-bio {
+    color: white;
+    margin-top: 10rem;
+    margin-left: 4rem;
+
+    img {
+        margin-left: 1rem;
+    }
+}
+
+.main-text-bio {
+    width: fit-content;
+    position: relative;
+    font-size: 20px;
+    color: rgb(78, 77, 77);
+}
+
+.main-text-bio::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    animation: animate 5s linear infinite;
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 30px #fff);
+}
+
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+.main-capa {
+    height: 601px;
+}
+
+.main1 {
+    transition: 10s;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* main 2 - sobre  */
+
+.main2 {
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    h1 {
+        color:#8C52FF;
+    }
+    p  { 
+        color: white;
+       }
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 10rem;
+}
+
+
+@keyframes CSSscrollReveal {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* main 3 - valores  */
+
+.main3 {
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 0.2rem;
+
+    h1 {
+        color: #8C52FF;
+    }
+    color: white;
+
+    .valores {
+        margin-top: 8rem;
+    }
+
+    img {
+        height: 450px;
+    }
+}
+
+/* main 4 - missao  */
+
+.main4 {
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 15rem;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0.2rem;
+
+    color: white;
+    h1 {
+        color: #8C52FF;
+    }
+
+    .text {
+        margin-top: 4rem;
+    }
+}
+
+/* footer  */
+
+.footer {
+    padding: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    border-top-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.253);
+
+    .logologo {
+        width: 11rem;
+        cursor: pointer;
+    }
+
+    .media-link {
+        width: 34px;
+    }
+
+    .media-link-yt {
+        width: 45px;
+    }
+
+    .media-link-email {
+        width: 45px;
+    }
+
+    .line {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    a {
+        color: white;
+    }
+
+}
+
+.mark {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+
